@@ -22,5 +22,5 @@ glmOffset <-  cqn_rr$glm.offset
 ## write CQN values and GLM offset values to external files
 #df.CQN          <- cbind(raw[-idx.0, 1:6], CQN)
 #df.glmOffset    <- cbind(raw[-idx.0, 1:6], glmOffset)
-write.table(CQN,       file="./CQN.txt",        sep="\t", quote=F, row.names=T, col.names=T)
-write.table(glmOffset, file="./GLM_Offset.txt", sep="\t", quote=F, row.names=T, col.names=T)
+write.table(CQN,       file="./data/CQN.txt",        sep="\t", quote=F, row.names=T, col.names=T)
+write.table(glmOffset, file="./data/GLM_Offset.txt", sep="\t", quote=F, row.names=T, col.names=T)
